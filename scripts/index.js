@@ -43,7 +43,11 @@ infoBtnDOM.addEventListener('click', (e) => {
     // Butonun işlevi bittiği için görünmez hale getiriliyor.
     infoBtnDOM.classList.add('display-off');
     // Bilgi kısmına isim ekleniyor ve görünür hale getiriliyor.
-    infoTextDOM.innerHTML = "Enes Başpınar (22)"
+
+    const firstName = "Enes";
+    const lastName = "Başpınar";
+    const age = 22;
+    infoTextDOM.innerHTML = `${firstName} ${lastName} (${age})`
     infoTextDOM.classList.add('display-on');
 })
 infoDivDOM.appendChild(infoBtnDOM);
